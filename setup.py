@@ -19,7 +19,7 @@ def get_version_and_cmdclass(pkg_path):
 
 __version__, cmdclass = get_version_and_cmdclass(__package_name__)
 
-if __version__ in (None, "", "unknown", "UNKNOWN"):
+if not __version__ or __version__.startswith("unknown") or __version__.upper() == "UNKNOWN":
     __version__ = "1.0.0"
 
 
