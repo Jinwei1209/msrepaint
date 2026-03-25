@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+
+# weights
+*.pth
+*.pt
+
+# bash files
+*.sh
+
+build/
+
+example_data/
+
+msrepaint.egg-info/
